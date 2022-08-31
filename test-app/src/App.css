@@ -7,6 +7,14 @@
   pointer-events: none;
 }
 
+.Goal {
+  pointer-events: none;
+  border: 10px ridge;
+  border-width: 8px 10px 0px 10px ;
+  border-color: white white white white;
+  
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 10s linear;
@@ -27,6 +35,8 @@
 .Game-Bt {
   background-color: #11752f;
   color: #020c0f;
+  margin-left: calc(10px + 1.5vmin);
+  margin-right: calc(10px + 1.5vmin);
   font-size: calc(10px + 1.5vmin);
 }
 

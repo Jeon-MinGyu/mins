@@ -30,14 +30,18 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  font-color: white;
 `;
 
 const Front = styled.div`
   text-align: right;
+  font-color: white;
 `;
 
 const Back = styled.div`
   width: 1em;
+  
+  font-color: white;
 `;
 
 export default Timer;

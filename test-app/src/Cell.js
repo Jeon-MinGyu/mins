@@ -10,7 +10,7 @@ function Cell({ num, handleClick }) {
 }
 
 const Container = styled.div`
-  border: 1px solid red;
+  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;

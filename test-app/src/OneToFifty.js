@@ -8,7 +8,7 @@ for (let i = 1; i <= 25; i++) {
   array.push(i);
 }
 
-function OneToFifty() {
+function OneToFifty({ }) {
   const [numbers, setNumbers] = useState(array);
   const [gameFlag, setGameFlag] = useState(false);
   const [current, setCurrent] = useState(1);
@@ -36,13 +36,14 @@ function OneToFifty() {
     setGameFlag(false);
   };
 
+
   return (
     <Container>
       <Board numbers={numbers} handleClick={handleClick}></Board>
       {gameFlag ? (
         <Timer />
       ) : (
-        <StartButton onClick={startGame}>start</StartButton>
+      <StartButton onClick={startGame}>start</StartButton>
       )}
     </Container>
   );
@@ -60,7 +61,8 @@ const Container = styled.div`
 
   width: 100%;
   height: 100%;
-  border: 1px solid black;
+  border: 2px solid white;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,8 +71,12 @@ const Container = styled.div`
 
 const StartButton = styled.button`
   margin-top: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
   width: 100px;
   height: 50px;
+  background-color: #11752f;
+  margin-bottom: 10px;
 `;
 
 export default OneToFifty;
