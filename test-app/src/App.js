@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import OneToFifty from "./OneToFifty";
+
+
+const Speedgame = () => {
+  return <OneToFifty></OneToFifty>;
+};
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <img src="img/scball.png" className="App-logo" alt="ball" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          우당탕탕 축구 교실
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button className="Game-Bt" onclick={Speedgame()}>순발력 훈련</button>
       </header>
     </div>
+
   );
 }
+
 
 export default App;
